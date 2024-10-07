@@ -51,6 +51,9 @@ function removeWeatherPlaceholderAndAddInfo(json, placeholder) {
 }
 
 
+/**
+ * Sednind a weather widget for the current location of the user
+ */
 weather.addEventListener('click', function() {
     var placeholder = addWeatherPlaceholder();
 
