@@ -1,0 +1,228 @@
+html, body {
+    font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: none;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    flex: auto;
+    overflow-y: scroll;
+}
+
+.prompt {
+    flex: none;
+    padding: 1em;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 10px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #aaa;
+}
+
+a:link, a:visited, a:active {
+    color: inherit;
+    text-decoration: underline;
+}
+a:hover, a.button:link {
+    text-decoration: none;
+}
+
+a.personalLink::before {
+    content: '';
+    background-image: url('https://raw.githubusercontent.com/aadev151/aadev151.github.io/master/my_logo.png');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.inputWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    max-width: 100%;
+    padding: .5em;
+    font-size: 21px;
+    border: 2px solid #1beabd;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #fff,
+			0 0 0 0 #fff,
+			3px -3px 10px #1beabd, 
+			-3px 3px 10px #10abff;
+}
+
+.promptInput {
+    width: 100%;
+}
+
+.message {
+    padding: .7em;
+    border-radius: 10px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.fromBot {
+    border: 2px solid black;
+}
+
+.toBot {
+    background-color: black;
+    color: white;
+}
+
+.responsePlaceholder {
+    animation-duration: .95s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholderAnimation;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    height: 22px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.responsePlaceholder-12 {
+    width: 100%;
+}
+
+.responsePlaceholder-8 {
+    width: 67%;
+}
+
+@keyframes placeholderAnimation {
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+
+.buttons {
+    margin-top: .5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.button {
+    background-color: #eee;
+    color: black;
+    padding: .3em;
+    width: 75px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button:hover {
+    background-color: #ccc;
+}
+
+.responsePlaceholder-Weather {
+    position: relative;
+    width: 35%;
+    height: 150px;
+}
+
+.weather {
+    position: relative;
+    width: 35%;
+    height: 150px;
+}
+
+.weather-icon {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.weather-city {
+    position: absolute;
+    top: 25px;
+    left: 230px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.weather-temp {
+    position: absolute;
+    top: 60px;
+    left: 230px;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+a.doordash::before {
+    content: '';
+    background-image: url('https://freelogopng.com/images/all_img/1656222855doordash%20logo.png');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.optimizationBanner {
+    z-index: 9999;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1480px) and (min-height: 680px) {
+    .optimizationBanner {
+        display: none;
+    }
+}

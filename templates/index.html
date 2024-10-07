@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="optimizationBanner">
+        Due to time constraints, this website is only optimized for desktop devices (starting at 1480x680).
+    </div>
+
+    <div class="header">
+        <h1>Helper Chatbot</h1>
+        <h3>By <a class="personalLink" href="https://alexanisimov.com" target="_blank">Alex Anisimov</a></h3>
+    </div>
+
+    <div class="content" id="content">
+    </div>
+
+    <div class="prompt">
+        <div class="inputWrapper">
+            <form id="promptForm">
+                <input class="promptInput" type="text" placeholder="Enter your prompt..." id="prompt">
+                <div class="buttons">
+                    <a class="button" id="weather">Weather</a>
+                    <a class="button" id="food">Food</a>
+                    <a class="button" id="qr">QR-code</a>
+                    <a class="button" id="quote">Quote</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/commons.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/prompts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/buttons.js') }}"></script>
+</body>
+</html>
