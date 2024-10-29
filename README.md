@@ -1,7 +1,5 @@
 # Helper Chatbot
 
-This project was created as a Kata assessment for the interview process at Direct Supply.
-
 This is a web-based chatbot, written using JavaScript, Python, HTML, and CSS. It is capable of:
 1. Talking to users. The "brains" behind the bot is Gemini.
 2. Displaying weather for user's current location
